@@ -15,7 +15,7 @@ function App() {
         <h1>Hi! I'm Marcos</h1>
         <Navigation/>
       </Header>
-      <BrowserRouter>     
+      <BrowserRouter basename={process.env.PUBLIC_URL}>      
       <Route path="/" exact component={HomePage}/>
       <Route path="/publications" exact component={Publications}/>
       <Route path="/tutorials" exact component={Tutorials}/>
